@@ -14,7 +14,7 @@
 	width: 900px;
 	margin: 10px;
 	margin-left: 230px; 
-	background: lightblue;
+	background: palegreen;
 	float: left;
 	font-size: 20px;
 	text-align: left;
@@ -32,17 +32,18 @@
 }
 
 .input {
-	border: 0;
+	border: 0px;
 	background: none;
 	outline: none;
 	margin-top: 10px;
-	width: 900px;
+	width: 870px;
 	font-size: 18px;
 	margin-left: 15px;
 }
 
-.input.focus {
-	border: solid 2px;
+.input:focus {
+	border: solid 1px;
+	border-color: darkorange;
 }
 
 textarea {
@@ -53,14 +54,42 @@ textarea {
 }
 
 .deleteButton {
-	visibility: hidden;
+	visibility: visible;
 	float: right;
 	margin: 5px;
 	font-size: 20px;
 	cursor: pointer;
-	color: darkorange; 
+	color: white; 
 }
 
 .tile:hover .deleteButton {
-	visibility: visible;
+	color: darkorange;
 }
+
+.voteButton {
+	position: relative;
+	left: 140px;
+	top: -50px;
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.voteButton:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+h4, p {
+	margin-left: 10px;
+}
+

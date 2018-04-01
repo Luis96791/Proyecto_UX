@@ -20,7 +20,9 @@ class ProductForm extends Component {
 	handleBlur = () => {
 		const product = { title: this.state.title, description: this.state.description, votes: this.state.votes }
 		axios.put(
-			`http://localhost:3001/api/v1/products/${this.props.product.id}`,
+			`https://apricot-crumble-18950.herokuapp.com/api/v1/products/${this.props.product.id}`,
+		//axios.put(
+		//	`http://localhost:3001/api/v1/products/${this.props.product.id}`,	
 			{product: product}
 		)
 		.then(response => {
